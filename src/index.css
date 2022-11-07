@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+*{
+  margin: 0;
+  background-color: #FFF;
+  color: #000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+.logo{
+  width: 5rem;
+  height: 3.6rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px #555;
+}
+.nav-element{
+  position: relative;
+  width: 50%;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+} 
+.nav-element li{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #090a;
+  
+}
+.nav-element li:hover{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #999;
+  transition: all 1.09s;
+}
+nav a.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #999;
+
+}
+
+
+/* *****************home********************************************/
+
+.dfg{   
+    position:absolute;
+    content:'here';
+    z-index:100;
+    color:#047a41;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+.buttons{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  
+}
+
+
+
+
+
+
+/* ------------------------login-------------------------*/
+
+.img-log{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./components/login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+
+}
+.img-re{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./components/register.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: inherit;
+  z-index: 100;
+}
+.form *{
+  background-color: transparent;
+
+}
+
+.form{
+  display: flex;
+  margin: 5% 30%;
+  border-radius: 10px;
+  background-color: transparent;
+
+}
+
+
+.login {
+  margin: auto;
+  padding: 7%;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 3px solid #fff5;
+  overflow: hidden;
+  background:rgba(0, 0, 0, .3);
+
+}
+.login div {
+  margin: 5% 0;
+}
+
+.login input{
+  border: none;
+  width: 35em;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fffc;
+}
+.login input:focus{
+  color: #444;
+  border: 2px solid #090a;
+  outline: #090a;
+}
+.login label{
+  color: #fff;
+  font-weight: 800;
+}
+.login div:nth-child(1) input::placeholder{
+  font-size: 1.5em;
+  transform: translateX(50px);
+}
+
+.login label{
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.login button{
+  position: relative;
+  border: none;
+  width: 8rem;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: #090a;
+  border-radius: 10px;
+  padding: 8px;
+  color: #fff;
+}
+/* --------------------------------detail--------------------------------*/
+.item{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background-color: #dfdddd;
+  margin: 2% auto;
+  padding:5% 0;
+}
+.card{
+  position: relative;
+  width: 55%;
+  height: 600px;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background-color: #90cf9c;
+  border-radius: 10px;
+
+
+}
+.card *{
+  margin: 2% auto;
+}
+.card > div{
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+  background-color: #90cf9c;
+
+}
+.card > div p{
+  height: 70%;
+  font-size: 25px;
+  background-color: #90cf9c;
+  overflow: hidden;
+  color: #555;
+
+
+}
+.image{
+  position: relative;
+  width: 60%;
+  height: 100%;
+  top: -3%;
+  margin-right: 10px;
+  border-radius: 10px;
+
+}
+
+
+/* *-----------------------------panier-----------------------*/
+
+table *{
+  z-index: 100;
+  
+}
+
+table{
+  border-collapse: collapse;
+  position: relative;
+  width: 70%;
+}
+td,th{
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+}
+tr:nth-child(even) td{
+  background-color: #0803;
+}
+
+.table-mark *{
+  background-color: green !important;
+}
+th, tr h4,tr h3,.total{
+  font-size: 20px;
+  font-weight: 900;
+  color: #fef;
+  background-color: #090a;
+
+}
+.total{
+  text-align: left;
+}
+.action-col{
+  width: 25%;
+}
+.action-col button{
+  border: none;
+  margin: 2px 5px;
+  padding: 2px 15px;
+  background-color: #057185;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #fef;
+  font-weight: 700;
+  cursor: pointer;
+
+
+}
+.action-col button:nth-child(3){
+  background-color: #f61;
+
+}
+
+
+.close-table{
+  position: relative;
+  width: 69%;
+  display: flex;
+  margin: 1%;
+  justify-content: space-between;
+  background-color: inherit;
+  padding: 2%;
+
+}
+.close-table button{
+  position: relative;
+  border: none;
+  width: 8rem;
+  font-weight: 600;
+  background-color: #90cf9c;
+  border-radius: 10px;
+  padding: 8px;
+  color: #fff;
+}
+.close-table button:first-child{
+  background-color: #057185;
+}
+
+.closeBtn{
+  background-color: #f61 !important;
+  cursor: pointer;
+
+}
+
+
+
+/******************cart***********************************/
+
+
+.cart{
+  position: fixed;
+  margin: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: #999;
+  z-index: 1000;
+}
+
+
+/******************testimony card**********************************/
+
+
+.testimony-image{
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.testimony-image img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #90cf9c;
+
+}
+.image-content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 47%;
+  background-color: #90cf9c;
+  border-radius: 15px 15px 0px 15px;
+
+}
+.image-content::before, 
+.image-content::after{
+  content: '';
+  height: 50px;
+  width: 50px;
+  background-color: #90cf9c;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+.image-content::after{
+  background-color: #fff;
+  border-radius: 0 30px 0 0;
+}
+
+.text-content p{
+  text-align: center;
+}
+.text-content h3{
+  color: #888;
+}
+.text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+  font-size: 20px;
+  width: 100%;
+
+}
+
+.card-testimony{
+  width: 50%;
+}
+
+
+
+
+.slide{
+  background-color: #333;
+
+}
+
+
+
+
+
+/**********************footer*/
+
+
+
+.footer * {
+  background-color: #181d1a;
+ 
+}
+.footer h5{
+  font-size: 17px;
+  color: #090a;
+  cursor: pointer;
+  text-align: center;
+}
+.footer{
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #181d1a;
+  width: 100%;
+  height: 75vh;
+}
+.social-net{
+  display: flex;
+  width: 64%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3%;
+
+}
+.social-net > div > *{
+  width: 142%;
+  padding: 6%;
+  margin: 2.5%;
+  z-index: -1;
+}
+.social-net-container{
+  position: relative;
+  left: -100px;
+}
+.container-net div *{
+  position: relative;
+  top: 35px;
+  right: 10px;
+}
+.container-net {
+  position: relative;
+  left: -25px;
+}
+.social-net input{
+  border: none;
+  background-color: #cfcfcf;
+  width: 130%;
+}
+.social-net > div:first-child > *> * {
+  margin: 2%;
+}
+.social-net h3{
+  font-size: 22px;
+  color: white;
+}
+.about{
+  margin: auto;
+  width: 72%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding-top: 2%;
+
+}
+.about > div {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+  border-right: 1px solid #090a;
+  padding-right: 5%;
+  margin-left: 5%;
+
+}
+.about h4{
+  font-size: 20px;
+  color: white;
+}
+
+.about a {
+  font-size: 18px;
+  color: #b1b1b1;
+ 
+}
+.about a:hover{
+  text-decoration: underline;
+}
+.send{
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background-color: #070;
+  cursor: pointer;
+  
+}
+
+
+
+/*error ****************************/
+
+.error{
+  display: none;
+}
+.display-error{
+  display: block;
+}
+
+
+/**************************les formulaires de paiement ****************************/
+.paiement{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 5% auto;
+
+}
+.input-info{
+  background-color: #ccca;
+  border: none;
+  height: 3em;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 18px
+}
+.input-info:focus{
+  border: 1px  solid greenyellow;
+  outline: greenyellow;
+  color: #222;
+  background-color: #ddda;
+}
+.paiement input[type = 'submit']{
+  border: none;
+  font-size: 22px;
+  background-color: #090a;
+  padding: 10px 50px;
+  width:200px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.paiement div input[type='checkbox']{
+  width: 20px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.information-container{
+  width: 48%;
+  height: 98%;
+}
+.information{
+  
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  right: -30%;
+
+}
+.info-card{
+  width: 46%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
