@@ -6,7 +6,6 @@ import Card from './Card'
 import {SearchInput as Hdr} from './AllProducts'
 import {dataImage} from './imageHome/dataImage'
 import {  useCart } from "react-use-cart";
-import Slider from 'react-slick'
 import {dataProfile} from './profile/dataProfile'
 import {Animation} from './Register'
 //import {Carousel} from '3d-react-carousal';

@@ -12,7 +12,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "3d-react-carousal": "^5.0.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.2",
     "fannypack": "^4.21.38",
