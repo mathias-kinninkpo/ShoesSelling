@@ -2,8 +2,6 @@ import { Link } from "react-router-dom"
 import {  useCart } from "react-use-cart";
 import styled from 'styled-components'
 import {useState, useEffect, useRef} from 'react'
-import autoAnimate from '@formkit/auto-animate'
-import {CiSquareMore} from '@fortawesome/free-solid-svg-icons'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -122,12 +120,11 @@ const Para = styled.p`
 
 export default function Blog({item}){
 
-    const parentRef = useRef(null)
 
   useEffect(() => {
     AOS.init({
         offset: 1,
-        duration: 1600,
+        duration: 600,
         easing: 'ease-in-sine',
         delay: 500,
       });

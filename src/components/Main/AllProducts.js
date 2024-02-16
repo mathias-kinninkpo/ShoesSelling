@@ -148,8 +148,10 @@ export default function AllProducts(){
              
                 <ItemContainer >
                         {
+                            // eslint-disable-next-line array-callback-return
                             data.filter(data => {
                                 const d = data.nom
+                                // eslint-disable-next-line eqeqeq
                                 if (researched == ''){
                                     return data
                                }
