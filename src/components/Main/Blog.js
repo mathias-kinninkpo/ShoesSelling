@@ -36,7 +36,7 @@ const ImageDesign = styled.div`
 `
 const Item = styled.div`
     position: relative;
-    width: 370px;
+    width: 350px;
     height: 470px;
     margin: 2%;
     padding: .8%;
